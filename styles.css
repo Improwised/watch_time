@@ -28,8 +28,12 @@ body {
 }
 
 .half-width {
-    height: 300px;
+    height: 400px;
     border-bottom: 5px solid #aaa;
+}
+
+.half-width-wib {
+    height: 400px;
 }
 
 .light-gray {

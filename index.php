@@ -19,13 +19,13 @@
             
             ?>
         </div>
-        <div class="half-width"><h2 class="light-gray">Already Watched</h2>
+        <div class="half-width-wib"><h2 class="light-gray">Already Watched</h2>
             <?php
 
 
             ?>
         </div>
     </div>
-    <?php include "inc/footer.php";?>
+    <!-- <?php include "inc/footer.php";?> -->
 </body>
 </html>
