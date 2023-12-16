@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Add Watchlist Item</title>
 </head>
 <body>
-    <?php include 'header.php'; ?>
+    <?php include '../inc/header.php'; ?>
     <div class="form-pre-container">
-        <form id="movieForm" class="form-container" action="process_movie.php" method="post">
+        <form id="movieForm" class="form-container" action="../back/process_movie.php" method="post">
             <label for="movieName" class="form-label">Movie Name:</label>
             <input type="text" id="movieName" name="movieName" class="form-input">
 

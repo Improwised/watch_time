@@ -7,12 +7,12 @@
     <title>Watch Time</title>
 </head>
 <body>
-    <?php include "header.php";?>
+    <?php include "inc/header.php";?>
     <div>
         <div class="half-width">
             <div class='watch-item-section'>
                 <h2 class="light-gray">Watch List</h2>
-                <a href='add.php' class='item-button'><span>Add Item</span></a>
+                <a href='pages/add.php' class='item-button'><span>Add Item</span></a>
             </div>
             <?php 
             
@@ -26,6 +26,6 @@
             ?>
         </div>
     </div>
-    <?php include "footer.php";?>
+    <?php include "inc/footer.php";?>
 </body>
 </html>
