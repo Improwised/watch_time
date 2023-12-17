@@ -41,7 +41,6 @@ body {
 }
 
 .item-button {
-    /* display: inline-block; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,9 +78,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
-    /* Larger width */
     max-width: 400px;
-    /* Maximum width for better readability on larger screens */
 }
 
 .form-label {
@@ -102,7 +99,6 @@ body {
 
 .form-checkbox {
     margin-bottom: 16px;
-    /* Increased margin for the checkbox label */
     margin-top: 6px;
 }
 
@@ -154,50 +150,37 @@ body {
 }
 
 .movie-card {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 300px;
     margin: 20px;
     background-color: #f0f0f0;
-    /* Background color for the card */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.2s ease-in-out;
 }
 
-/* Header styling */
 .movie-card-header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
+    padding-top: 15px;
+    padding-right: 15px;
+    align-self: self-end;
     color: #007BFF;
     cursor: pointer;
-    /* Rotate the pencil point to the right side */
 }
 
-/* Edit icon styling */
-.movie-card-header i {
-    font-size: 24px;
-    /* Larger font size for the edit icon */
-    display: inline-block;
-}
-
-/* Content styling */
 .movie-card-content {
-    padding: 20px;
+    padding: 0 20px;
 }
 
-/* Button styling */
 .movie-card-buttons {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     background-color: #fff;
-    /* Background color for the button container */
 }
 
-/* Individual button styling */
 .movie-card-buttons button {
     flex-grow: 1;
     background-color: #007BFF;
@@ -211,19 +194,14 @@ body {
     transition: background-color 0.3s ease-in-out;
 }
 
-/* Watched button specific styling */
 .movie-card-buttons button.watched-btn {
     background-color: #28a745;
-    /* Watched button color */
 }
 
-/* Delete button specific styling */
 .movie-card-buttons button.delete-btn {
     background-color: #dc3545;
-    /* Delete button color */
 }
 
-/* Hover effect */
 .movie-card:hover {
     transform: translateY(-5px);
 }
