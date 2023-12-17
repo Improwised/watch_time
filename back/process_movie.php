@@ -19,7 +19,8 @@
            - Print those variables in Movie saved successfully! message
         */
         $watched = $_POST["watched"];
-
+        //for watched try this
+        // $watched = isset($_POST['watched']) ? 'true' : 'false';
 
         // Simple validation
         if (empty($_POST["movieName"]) || empty($_POST['genre'])) {
@@ -48,7 +49,7 @@
            - try to add new movie
         */
         $insertQuery = "Write Your Query here";
-        $conn = getConnection();
+        $conn = getConnection('../.env');
         $insertResult = pg_query_params($conn, $insertQuery, array($movieName, $genre, $watched));
         if ($insertResult) {
             header("refresh:0; ../index.php");

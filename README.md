@@ -59,3 +59,5 @@ git clone https://github.com/Improwised/watch_time.git
 
 ### Exercise - 8 (Add movie functionality)
 - try to implement movie adding functionality, exercise can be found in back/process_movie.php
+- movieName and genre should be defined
+- update watch variable using ternery
