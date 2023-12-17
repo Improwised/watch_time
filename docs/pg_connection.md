@@ -8,6 +8,10 @@ sudo pacman -S php-pgsql
 ```
 sudo nano /etc/php/php.ini
 ```
+in case of php73-fpm we have to do
+```
+sudo nano /etc/php73/php.ini
+```
 
 3. Do enable extension=pgsql
 4. create .env file at project root folder and set
