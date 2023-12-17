@@ -205,3 +205,19 @@ body {
 .movie-card:hover {
     transform: translateY(-5px);
 }
+
+.greet-button-class {
+    display: flex;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.greet-button {
+    font-size: 20px;
+    border-radius: 15px;
+    width: 140px;
+    padding: 10px 0;
+    background-color:chocolate;
+    color: #fff;
+}
