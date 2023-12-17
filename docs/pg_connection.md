@@ -18,4 +18,4 @@ DB_NAME=your_database_name
 DB_USER=your_username
 DB_PASSWORD=your_password
 ```
-5. go to db/conn.php, you can see db connection status there
+5. go to db/test_conn.php, you can see db connection status there

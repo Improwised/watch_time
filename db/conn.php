@@ -1,10 +1,8 @@
 <?php
 require 'parse.php';
 
-getConnection(); // To check connection
-
-function getConnection() {
-    $env = parseEnv('../.env');
+function getConnection($env_path) {
+    $env = parseEnv($env_path);
 
     // Get environment variables
     $host = $env['DB_HOST'] ?? '';
@@ -15,13 +13,10 @@ function getConnection() {
 
     // Establish a connection
     $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
-
     // Check the connection
     if (!$conn) {
-        echo "Connection failed.";
         return NULL;
     } else {
-        echo "Connected successfully\n";
         return $conn;
     }
 }

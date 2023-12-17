@@ -22,6 +22,17 @@
                    - If you want any help demo is given for watched section
                 */
 
+                //_______________Give It a try after exercise 6_______________
+                // $movies = [];
+                // $selectQuery = "SELECT * FROM watch_list WHERE watched=false";
+                // $conn = getConnection('.env');
+                // $result = pg_query($conn, $selectQuery);
+                // while ($row = pg_fetch_assoc($result)) {
+                //     // Process each row
+                //     array_push($movies, $row);
+                // }                
+                // pg_close($conn);
+
                 // Loop 
                 /* Exercise-4: 
                    - Rename movie to movies and make movie as array of movie associative arrays
@@ -54,10 +65,25 @@
         <div class="half-width-wib"><h2 class="light-gray">Already Watched</h2>
         <div class="movie-cards-container">
                 <?php
+                require 'db/conn.php';
+
                 $movies = [
                     ["id"=>1, "name" => "Pirates of The carrabian", "genre" => "Adventure"],
                     ["id"=>2, "name" => "One Piece to earth where gardner know what is doing teller to shifter", "genre" => "Anime"]
                 ];
+                
+                /* Exercise - 6
+                   - Write select query with condition watched = true, so we can get movies that are watched
+                */
+                // $movies = [];
+                // $selectQuery = "______Write Here______";
+                // $conn = getConnection('.env');
+                // $result = pg_query($conn, $selectQuery);
+                // while ($row = pg_fetch_assoc($result)) {
+                //     // Process each row
+                //     array_push($movies, $row);
+                // }                
+                // pg_close($conn);
 
                 foreach ($movies as $movie) {
                     echo '<div class="movie-card">

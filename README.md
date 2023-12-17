@@ -51,3 +51,5 @@ git clone https://github.com/Improwised/watch_time.git
 ### Exercise - 6 (Select movies from db) 
 - For that, first user have to configure pg database with php
 - see [pg_connection.md](https://github.com/Improwised/watch_time/blob/main/docs/pg_connection.md)
+- Write select query to get movies that are watched
+- Exercise should be done in index.php file
