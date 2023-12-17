@@ -41,9 +41,13 @@ git clone https://github.com/Improwised/watch_time.git
 - Loop through movies using foreach and see it's effect
 - Exercise should be done in index.php
 
-### Exercise -5 (Function)
+### Exercise - 5 (Function)
 - Exercise should be done in back/greet.php
 - Write greet() function
 - It will echo alert message in script tags
 - Uncomment the greet in request handlers
 - Try to click out greet button in home page
+
+### Exercise - 6 (Select movies from db) 
+- For that, first user have to configure pg database with php
+- see [pg_connection.md](https://github.com/Improwised/watch_time/blob/main/docs/pg_connection.md)
