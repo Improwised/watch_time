@@ -25,11 +25,11 @@
         // Simple validation
         if (empty($_POST["movieName"]) || empty($_POST['genre'])) {
             echo '<div class="message-container error-message">Please fill in all fields.</div>';
-            //_______try to uncomment me in exercise 8______________
-            // addMovie($movieName, $genre, $watched);
             header("refresh:2;url=../pages/add.php");
             exit();
         } else {
+            //_______try to uncomment me in exercise 8______________
+            // addMovie($movieName, $genre, $watched);
             echo '<div class="message-container">Movie saved successfully!
             <br><br> Movie Name: ' . /* Movie Name */  '<br>Genre: ' . /* Genre */ '</div>';
             header("refresh:2;url=../index.php");
@@ -45,7 +45,7 @@
         /* Exercise - 8
            - Write insertion query for movie
            - figure out which parameter it needed
-           - uncomment addMovie() function in line 28
+           - uncomment addMovie() function in line 32
            - try to add new movie
         */
         $insertQuery = "Write Your Query here";
