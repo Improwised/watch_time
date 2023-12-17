@@ -56,3 +56,6 @@ git clone https://github.com/Improwised/watch_time.git
 
 ### Exercise - 7 (Demo of watched and unwatched)
 - uncomment updateItemWatchValue() function in back/watch_toggle.php and see what happens when you click movie's watch or unwatched buttons
+
+### Exercise - 8 (Add movie functionality)
+- try to implement movie adding functionality, exercise can be found in back/process_movie.php
