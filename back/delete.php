@@ -27,9 +27,9 @@
     }
 
     function deleteItem($id) {
-        $deleteQuery = "DELETE FROM watch_list WHERE id = 1";
+        $deleteQuery = "DELETE FROM watch_list WHERE id = $1";
         $conn = getConnection('../.env');
-        $deleteResult = pg_query_params($conn, $deleteResult, array($id));
+        $deleteResult = pg_query_params($conn, $deleteQuery, array($id));
         if ($deleteResult) {
             header("refresh:0; ../index.php");
         } else {
