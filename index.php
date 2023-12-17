@@ -35,7 +35,7 @@
                     */
                         echo '<div class="movie-card">
                         <div class="movie-card-header">
-                            <a href=\'/pages/edit.php\'><img src=\'assets/images/edit.png\' alt=\'edit\' height=\'30px\' width=\'30px\' /></a>
+                            <a href=\'/pages/edit.php?id' . /* Write movie id */'\'><img src=\'assets/images/edit.png\' alt=\'edit\' height=\'30px\' width=\'30px\' /></a>
                         </div>
                         <div class="movie-card-content">
                             <h3>' . /* Write Movie Name*/ '</h3>
@@ -62,7 +62,7 @@
                 foreach ($movies as $movie) {
                     echo '<div class="movie-card">
                     <div class="movie-card-header">
-                        <a href=\'/pages/edit.php\'><img src=\'assets/images/edit.png\' alt=\'edit\' height=\'30px\' width=\'30px\' /></a>
+                        <a href=\'/pages/edit.php?id=' . $movie["id"] .'\'><img src=\'assets/images/edit.png\' alt=\'edit\' height=\'30px\' width=\'30px\' /></a>
                     </div>
                     <div class="movie-card-content">
                         <h3>' . $movie["name"] . '</h3>
