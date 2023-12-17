@@ -176,7 +176,7 @@ body {
 
 .movie-card-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 10px;
     background-color: #fff;
 }

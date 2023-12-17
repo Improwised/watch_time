@@ -8,10 +8,15 @@
 
         // Update details in the database
         // Implement your database connection and query here
-        // Example: updateDetails($id, $name, $genre, $watched);
-
-        // Redirect to the homepage or display a success message
-        header('Location: ../index.php');
+        // Example: $response = updateDetails($id, $name, $genre, $watched);
+        
+        // if($response) {
+        //     echo "<script>alert(\"Updated\")</script>";
+        //     header("refresh:0; ../index.php");
+        // } else {
+        //     echo "<script>alert(\"Error\")</script>";
+        //     header("refresh:0; ../index.php");
+        // }
         exit();
     }
 ?>

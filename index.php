@@ -42,8 +42,8 @@
                             <p>Genre: '. /* Write Movie Genre*/ '</p>
                         </div>
                         <div class="movie-card-buttons">
-                            <button class="watched-btn">Watched</button>
-                            <button class="delete-btn">Delete</button>
+                            <a href=\'back/watch_toggle.php?id='. /*write movie id */ '&watch_value=true\' class="item-button-class"><button class="watched-btn">Watched</button></a>
+                            <a href=\'back/delete.php?id='. /*write movie id */ '\' class="item-button-class"><button class="delete-btn">Delete</button></a>
                         </div>
                         </div>';
                     // close if statement
@@ -69,8 +69,8 @@
                         <p>Genre: ' . $movie["genre"]. '</p>
                     </div>
                     <div class="movie-card-buttons">
-                        <button class="watched-btn">Unwatch</button>
-                        <button class="delete-btn">Delete</button>
+                        <a href=\'back/watch_toggle.php?id='. $movie["id"] .'&watch_value=false\' class="item-button-class"><button class="watched-btn">Unwatch</button></a>
+                        <a href=\'back/delete.php?id='. $movie["id"] .'\' class="item-button-class"><button class="delete-btn">Delete</button></a>
                     </div>
                     </div>';
                 }
