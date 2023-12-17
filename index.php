@@ -17,22 +17,25 @@
                         
             <div class="movie-cards-container">
                 <?php
-                /* Exercise-2: Define array called movie
+                /* Exercise-3: Define array called movie
                    - Movied should Associative array and it shoud contains id, name, genre as key
                    - If you want any help demo is given for watched section
                 */
 
                 // Loop 
-                /* Exercise-3: 
+                /* Exercise-4: 
                    - Rename movie to movies and make movie as array of movie associative arrays
                    - Create foreach loop on that array
                    - demo is given for watched section
                 */
                 // open the foreach loop 
-                    if (isset($movie['name']) || isset($movie['genre'])){
+                    /* Exercise-2:
+                       - write condition that if found movie array's name and genre, then and then only this echoed
+                       - start if statement
+                    */
                         echo '<div class="movie-card">
                         <div class="movie-card-header">
-                            <i class="fas fa-pencil-alt"></i>
+                            <a href=\'/pages/edit.php\'><img src=\'assets/images/edit.png\' alt=\'edit\' height=\'30px\' width=\'30px\' /></a>
                         </div>
                         <div class="movie-card-content">
                             <h3>' . /* Write Movie Name*/ '</h3>
@@ -43,7 +46,7 @@
                             <button class="delete-btn">Delete</button>
                         </div>
                         </div>';
-                    }
+                    // close if statement
                 // close the for loop
                 ?>
             </div>
@@ -53,13 +56,13 @@
                 <?php
                 $movies = [
                     ["id"=>1, "name" => "Pirates of The carrabian", "genre" => "Adventure"],
-                    ["id"=>2, "name" => "One Piece", "genre" => "Anime"]
+                    ["id"=>2, "name" => "One Piece to earth where gardner know what is doing teller to shifter", "genre" => "Anime"]
                 ];
 
                 foreach ($movies as $movie) {
                     echo '<div class="movie-card">
                     <div class="movie-card-header">
-                        <i class="fas fa-pencil-alt"></i>
+                        <a href=\'/pages/edit.php\'><img src=\'assets/images/edit.png\' alt=\'edit\' height=\'30px\' width=\'30px\' /></a>
                     </div>
                     <div class="movie-card-content">
                         <h3>' . $movie["name"] . '</h3>

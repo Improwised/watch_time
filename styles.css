@@ -173,7 +173,6 @@ body {
     padding: 10px;
     color: #007BFF;
     cursor: pointer;
-    transform: rotate(45deg);
     /* Rotate the pencil point to the right side */
 }
 
