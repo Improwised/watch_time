@@ -53,3 +53,6 @@ git clone https://github.com/Improwised/watch_time.git
 - see [pg_connection.md](https://github.com/Improwised/watch_time/blob/main/docs/pg_connection.md)
 - Write select query to get movies that are watched
 - Exercise should be done in index.php file
+
+### Exercise - 7 (Demo of watched and unwatched)
+- uncomment updateItemWatchValue() function in back/watch_toggle.php and see what happens when you click movie's watch or unwatched buttons
