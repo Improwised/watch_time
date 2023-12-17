@@ -9,7 +9,7 @@ sudo pacman -S php-pgsql
 sudo nano /etc/php/php.ini
 ```
 
-3. enable extension=pgsqlsudo nano /etc/php/php.ini
+3. Do enable extension=pgsql
 4. create .env file at project root folder and set
 ```
 DB_HOST=your_host
