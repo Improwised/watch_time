@@ -17,6 +17,7 @@
                         
             <div class="movie-cards-container">
                 <?php
+                require 'db/conn.php';
                 /* Exercise-3: Define array called movie
                    - Movied should Associative array and it shoud contains id, name, genre as key
                    - If you want any help demo is given for watched section
@@ -65,7 +66,6 @@
         <div class="half-width-wib"><h2 class="light-gray">Already Watched</h2>
         <div class="movie-cards-container">
                 <?php
-                require 'db/conn.php';
 
                 $movies = [
                     ["id"=>1, "name" => "Pirates of The carrabian", "genre" => "Adventure"],

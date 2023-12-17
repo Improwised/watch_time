@@ -16,14 +16,14 @@
     }
 
     function UpdateItemWatchValue($id, $value) {
-        $updateQuery = "UPDATE watch_time SET watched = $1 WHERE id = $2";
+        $updateQuery = "UPDATE watch_list SET watched = $1 WHERE id = $2";
         $conn = getConnection('../.env');
         $updateResult = pg_query_params($conn, $updateQuery, array($value, $id));
         if ($updateResult) {
             header("refresh:0; ../index.php");
         } else {
             echo "Update failed: " . pg_last_error($conn) . "\n";
-            header("refresh:1; ../index.php");
+            header("refresh:3; ../index.php");
         }             
         pg_close($conn);
     }
