@@ -12,7 +12,10 @@ in case of php73-fpm we have to do
 ```
 sudo nano /etc/php73/php.ini
 ```
-
+and also to install pgsql on php73
+```
+sudo pacman -S php73-pgsql
+```
 3. Do enable extension=pgsql
 4. create .env file at project root folder and set
 ```
