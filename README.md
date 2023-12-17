@@ -61,3 +61,15 @@ git clone https://github.com/Improwised/watch_time.git
 - try to implement movie adding functionality, exercise can be found in back/process_movie.php
 - movieName and genre should be defined
 - update watch variable using ternery
+
+### Exercise - 9 (Demo of deletion of movie)
+- uncomment deleteItem() function in back/delete.php and see what happens when you click delete in any of movie
+
+### Exercise - 10 (Updation of movie or series) Practice
+- we have pages/edit.php file which contains edit form for perticuler movie or series
+- Write db function to fetch details of movie from id, and provide it in get request as fetchDetails($id)
+- Assign perticuler variables and edited html properly, so you can see details in that edit form
+- If you do not understand task clearly, just read the comments in edit.php
+
+- Next when you save the form, process will happen according to update_movie.php
+- Implement updateDetails() function to update the database
