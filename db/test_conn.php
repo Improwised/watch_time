@@ -14,10 +14,8 @@ $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$pa
 // Check the connection
 if (!$conn) {
     echo 'Connection Failed';
-    return NULL;
 } else {
     echo 'Connection Successfully!';
-    return $conn;
 }
 pg_close($conn);
 ?>
